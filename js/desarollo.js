@@ -165,7 +165,34 @@ var rpta23=document.getElementById("Resultado23");
 var alerta23=document.getElementById("alerta23");
 
 /**--------------------------------------------- */
+var verbops24=document.getElementById("vps24");
+var verbopp24=document.getElementById("vpp24");
+var boton24=document.getElementById("button24");
+var rpta24=document.getElementById("Resultado24");
+var alerta24=document.getElementById("alerta24");
 
+/**--------------------------------------------- */
+var verbops25=document.getElementById("vps25");
+var verbopp25=document.getElementById("vpp25");
+var boton25=document.getElementById("button25");
+var rpta25=document.getElementById("Resultado25");
+var alerta25=document.getElementById("alerta25");
+
+/**--------------------------------------------- */
+var verbops26=document.getElementById("vps26");
+var verbopp26=document.getElementById("vpp26");
+var boton26=document.getElementById("button26");
+var rpta26=document.getElementById("Resultado26");
+var alerta26=document.getElementById("alerta26");
+
+/**--------------------------------------------- */
+var verbops27=document.getElementById("vps27");
+var verbopp27=document.getElementById("vpp27");
+var boton27=document.getElementById("button27");
+var rpta27=document.getElementById("Resultado27");
+var alerta27=document.getElementById("alerta27");
+
+/**--------------------------------------------- */
 boton.addEventListener("click", function(){
  var datops=verbops.value;
  var datopp=verbopp.value;
@@ -194,6 +221,7 @@ alerta.addEventListener("click", function(){
 });
 
   /**------------------------------------------------------------------------------------ */
+
   boton1.addEventListener("click", function(){
     var datops1=verbops1.value;
     var datopp1=verbopp1.value;
@@ -812,7 +840,7 @@ boton12.addEventListener("click", function(){
            alert("La respuesta es "+ "Vs: "+ "found"+ " , "+  " Vp : " + "found");
        });
 
-          /**--------------------------------------------------------------------------------------------- */
+/**--------------------------------------------------------------------------------------------- */
     boton23.addEventListener("click", function(){
         var datops23=verbops23.value;
         var datopp23=verbopp23.value;
@@ -839,3 +867,113 @@ boton12.addEventListener("click", function(){
        alerta23.addEventListener("click", function(){
            alert("La respuesta es "+ "Vs: "+ "thought"+ " , "+  " Vp : " + "thought");
        });
+
+/**--------------------------------------------------------------------------------------------- */
+boton24.addEventListener("click", function(){
+    var datops24=verbops24.value;
+    var datopp24=verbopp24.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops24=="chose"){
+          respuesta="correcta";
+   
+       }else{
+          respuesta="incorrecta";
+     
+       }
+       if(datopp24=="chosen"){
+           respuesta1="correcta";
+         
+       }else{
+           respuesta1="incorrecta";
+        
+       }
+       rpta24.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta24.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "chose"+ " , "+  " Vp : " + "chosen");
+   });       
+
+   /**--------------------------------------------------------------------------------------------- */
+boton25.addEventListener("click", function(){
+    var datops25=verbops25.value;
+    var datopp25=verbopp25.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops25=="ran"){
+          respuesta="correcta";
+   
+       }else{
+          respuesta="incorrecta";
+     
+       }
+       if(datopp25=="run"){
+           respuesta1="correcta";
+         
+       }else{
+           respuesta1="incorrecta";
+        
+       }
+       rpta25.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta25.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "ran"+ " , "+  " Vp : " + "run");
+   });       
+      /**--------------------------------------------------------------------------------------------- */
+boton26.addEventListener("click", function(){
+    var datops26=verbops26.value;
+    var datopp26=verbopp26.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops26=="lost"){
+          respuesta="correcta";
+   
+       }else{
+          respuesta="incorrecta";
+     
+       }
+       if(datopp26=="lost"){
+           respuesta1="correcta";
+         
+       }else{
+           respuesta1="incorrecta";
+        
+       }
+       rpta26.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta26.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "lost"+ " , "+  " Vp : " + "lost");
+   });       
+/**--------------------------------------------------------------------------------------------- */
+boton27.addEventListener("click", function(){
+    var datops27=verbops27.value;
+    var datopp27=verbopp27.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops27=="shot"){
+          respuesta="correcta";
+   
+       }else{
+          respuesta="incorrecta";
+     
+       }
+       if(datopp27=="shot"){
+           respuesta1="correcta";
+         
+       }else{
+           respuesta1="incorrecta";
+        
+       }
+       rpta27.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta27.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "shot"+ " , "+  " Vp : " + "shot");
+   });       
