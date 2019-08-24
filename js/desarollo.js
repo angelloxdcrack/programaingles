@@ -1,3 +1,8 @@
+
+var correctas=document.getElementById("correctas");
+var incorrectas=document.getElementById("incorrectas");
+var calcular=document.getElementById("botonCalcular");
+/**--------------------------------------------- */
 var verbops=document.getElementById("vps");
 var verbopp=document.getElementById("vpp");
 var boton=document.getElementById("button");
@@ -266,6 +271,40 @@ var boton38=document.getElementById("button38");
 var rpta38=document.getElementById("Resultado38");
 var alerta38=document.getElementById("alerta38");
 /**--------------------------------------------- */
+var verbops39=document.getElementById("vps39");
+var verbopp39=document.getElementById("vpp39");
+var boton39=document.getElementById("button39");
+var rpta39=document.getElementById("Resultado39");
+var alerta39=document.getElementById("alerta39");
+/**--------------------------------------------- */
+var verbops40=document.getElementById("vps40");
+var verbopp40=document.getElementById("vpp40");
+var boton40=document.getElementById("button40");
+var rpta40=document.getElementById("Resultado40");
+var alerta40=document.getElementById("alerta40");
+/**--------------------------------------------- */
+var verbops41=document.getElementById("vps41");
+var verbopp41=document.getElementById("vpp41");
+var boton41=document.getElementById("button41");
+var rpta41=document.getElementById("Resultado41");
+var alerta41=document.getElementById("alerta41");
+/**--------------------------------------------- */
+var verbops42=document.getElementById("vps42");
+var verbopp42=document.getElementById("vpp42");
+var boton42=document.getElementById("button42");
+var rpta42=document.getElementById("Resultado42");
+var alerta42=document.getElementById("alerta42");
+/**--------------------------------------------- */
+var verbops43=document.getElementById("vps43");
+var verbopp43=document.getElementById("vpp43");
+var boton43=document.getElementById("button43");
+var rpta43=document.getElementById("Resultado43");
+var alerta43=document.getElementById("alerta43");
+/**--------------------------------------------- */
+var contCorrectas=0;
+var contIncorrectas=0;
+/**--------------------------------------------- */
+
 boton.addEventListener("click", function(){
  var datops=verbops.value;
  var datopp=verbopp.value;
@@ -274,16 +313,20 @@ boton.addEventListener("click", function(){
  
     if(datops=="was/were"){
        respuesta="correcta";
-
+       contCorrectas=contCorrectas +1;
+    
     }else{
        respuesta="incorrecta";
+       contIncorrectas=contIncorrectas+1;
   
     }
     if(datopp=="been"){
         respuesta1="correcta";
+        contCorrectas=contCorrectas +1;
       
     }else{
         respuesta1="incorrecta";
+        contIncorrectas=contIncorrectas+1;
      
     }
     rpta.innerText= " Es " + respuesta + "," + respuesta1;
@@ -303,17 +346,17 @@ alerta.addEventListener("click", function(){
     
        if(datops1=="beat"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp1=="beaten"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta1.innerText= " Es " + respuesta + "," + respuesta1;
    
@@ -333,17 +376,19 @@ boton2.addEventListener("click", function(){
     
        if(datops2=="said"){
           respuesta="correcta";
+          contCorrectas=contCorrectas +1;
    
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp2=="said"){
            respuesta1="correcta";
+           contCorrectas=contCorrectas +1;
          
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta2.innerText= " Es " + respuesta + "," + respuesta1;
    
@@ -363,17 +408,19 @@ boton3.addEventListener("click", function(){
     
        if(datops3=="did"){
           respuesta="correcta";
+          contCorrectas=contCorrectas +1;
    
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp3=="done"){
            respuesta1="correcta";
+           contCorrectas=contCorrectas +1;
          
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta3.innerText= " Es " + respuesta + "," + respuesta1;
    });
@@ -389,16 +436,19 @@ boton4.addEventListener("click", function(){
     
        if(datops4=="ate"){
           respuesta="correcta";
+          contCorrectas=contCorrectas +1;
    
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp4=="eaten"){
            respuesta1="correcta";
+           contCorrectas=contCorrectas +1;
          
        }else{
            respuesta1="incorrecta";
+           contIncorrectas=contIncorrectas+1;
         
        }
        rpta4.innerText= " Es " + respuesta + "," + respuesta1;
@@ -417,17 +467,17 @@ boton5.addEventListener("click", function(){
     
        if(datops5=="heard"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp5=="heard"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta5.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -446,17 +496,17 @@ boton6.addEventListener("click", function(){
     
        if(datops6=="took"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp6=="taken"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;s
        }
        rpta6.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -475,17 +525,17 @@ boton7.addEventListener("click", function(){
     
        if(datops7=="saw"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp7=="seen"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta7.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -502,17 +552,17 @@ boton8.addEventListener("click", function(){
     
        if(datops8=="met"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp8=="met"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta8.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -529,17 +579,17 @@ boton9.addEventListener("click", function(){
     
        if(datops9=="drove"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp9=="driven"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta9.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -556,17 +606,17 @@ boton10.addEventListener("click", function(){
     
        if(datops10=="woke"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp10=="woken"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta10.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -583,17 +633,17 @@ boton11.addEventListener("click", function(){
     
        if(datops11=="spoke"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp11=="spoken"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta11.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -610,17 +660,17 @@ boton12.addEventListener("click", function(){
     
        if(datops12=="left"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp12=="left"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta12.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -637,17 +687,17 @@ boton12.addEventListener("click", function(){
     
        if(datops13=="wrote"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp13=="written"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta13.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -665,17 +715,17 @@ boton12.addEventListener("click", function(){
     
        if(datops14=="read"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp14=="read"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta14.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -695,17 +745,17 @@ boton12.addEventListener("click", function(){
     
        if(datops15=="forgot"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp15=="forgotten"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta15.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -724,17 +774,17 @@ boton12.addEventListener("click", function(){
     
        if(datops16=="sang"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp16=="sung"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta16.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -753,17 +803,17 @@ boton12.addEventListener("click", function(){
         
            if(datops17=="went"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp17=="gone"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta17.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -782,17 +832,17 @@ boton12.addEventListener("click", function(){
         
            if(datops18=="put"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp18=="put"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta18.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -810,17 +860,17 @@ boton12.addEventListener("click", function(){
     
        if(datops19=="told"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp19=="told"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta19.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -838,17 +888,17 @@ boton12.addEventListener("click", function(){
         
            if(datops20=="bought"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp20=="bought"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta20.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -866,17 +916,17 @@ boton12.addEventListener("click", function(){
         
            if(datops21=="set"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp21=="set"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta21.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -894,17 +944,17 @@ boton12.addEventListener("click", function(){
         
            if(datops22=="found"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp22=="found"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta22.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -922,17 +972,17 @@ boton12.addEventListener("click", function(){
         
            if(datops23=="thought"){
               respuesta="correcta";
-       
+              contCorrectas=contCorrectas +1;
            }else{
               respuesta="incorrecta";
-         
+              contIncorrectas=contIncorrectas+1;
            }
            if(datopp23=="thought"){
                respuesta1="correcta";
-             
+               contCorrectas=contCorrectas +1;
            }else{
                respuesta1="incorrecta";
-            
+               contIncorrectas=contIncorrectas+1;
            }
            rpta23.innerText= " Es " + respuesta + "," + respuesta1;
            
@@ -950,17 +1000,17 @@ boton24.addEventListener("click", function(){
     
        if(datops24=="chose"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp24=="chosen"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta24.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -978,17 +1028,17 @@ boton25.addEventListener("click", function(){
     
        if(datops25=="ran"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp25=="run"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta25.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1005,17 +1055,17 @@ boton26.addEventListener("click", function(){
     
        if(datops26=="lost"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp26=="lost"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta26.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1032,17 +1082,17 @@ boton27.addEventListener("click", function(){
     
        if(datops27=="shot"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp27=="shot"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta27.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1059,17 +1109,17 @@ boton28.addEventListener("click", function(){
     
        if(datops28=="built"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp28=="built"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta28.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1087,17 +1137,17 @@ boton29.addEventListener("click", function(){
     
        if(datops29=="sent"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp29=="sent"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta29.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1115,17 +1165,17 @@ boton30.addEventListener("click", function(){
     
        if(datops30=="stole"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp30=="stolen"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta30.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1143,17 +1193,17 @@ boton31.addEventListener("click", function(){
     
        if(datops31=="paid"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp31=="paid"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta31.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1170,17 +1220,17 @@ boton32.addEventListener("click", function(){
     
        if(datops32=="hit"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp32=="hit"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta32.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1197,17 +1247,17 @@ boton33.addEventListener("click", function(){
     
        if(datops32=="spent"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp32=="spent"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta32.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1225,17 +1275,17 @@ boton34.addEventListener("click", function(){
     
        if(datops34=="sat"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp34=="sat"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta34.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1252,17 +1302,17 @@ boton35.addEventListener("click", function(){
     
        if(datops35=="sat"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp35=="sat"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta35.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1280,17 +1330,17 @@ boton36.addEventListener("click", function(){
     
        if(datops36=="understood"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp36=="understood"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta36.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1307,17 +1357,17 @@ boton37.addEventListener("click", function(){
     
        if(datops37=="kept"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp37=="kept"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta37.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1335,17 +1385,17 @@ boton38.addEventListener("click", function(){
     
        if(datops38=="lent"){
           respuesta="correcta";
-   
+          contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
-     
+          contIncorrectas=contIncorrectas+1;
        }
        if(datopp38=="lent"){
            respuesta1="correcta";
-         
+           contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
-        
+           contIncorrectas=contIncorrectas+1;
        }
        rpta38.innerText= " Es " + respuesta + "," + respuesta1;
        
@@ -1353,3 +1403,154 @@ boton38.addEventListener("click", function(){
    alerta38.addEventListener("click", function(){
        alert("La respuesta es "+ "Vs: "+ "lent"+ " , "+  " Vp : " + "lent");
    });       
+ /**--------------------------------------------------------------------------------------------- */
+   boton39.addEventListener("click", function(){
+    var datops39=verbops39.value;
+    var datopp39=verbopp39.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops39=="swam"){
+          respuesta="correcta";
+          contCorrectas=contCorrectas +1;
+       }else{
+          respuesta="incorrecta";
+          contIncorrectas=contIncorrectas+1;
+       }
+       if(datopp39=="swum"){
+           respuesta1="correcta";
+           contCorrectas=contCorrectas +1;
+       }else{
+           respuesta1="incorrecta";
+           contIncorrectas=contIncorrectas+1;
+       }
+       rpta39.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta39.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "swam"+ " , "+  " Vp : " + "swum");
+   });       
+
+    /**--------------------------------------------------------------------------------------------- */
+    boton40.addEventListener("click", function(){
+        var datops40=verbops40.value;
+        var datopp40=verbopp40.value;
+        var respuesta="";
+        var respuesta1="";
+        
+           if(datops40=="spread"){
+              respuesta="correcta";
+              contCorrectas=contCorrectas +1;
+           }else{
+              respuesta="incorrecta";
+              contIncorrectas=contIncorrectas+1;
+           }
+           if(datopp40=="spread"){
+               respuesta1="correcta";
+               contCorrectas=contCorrectas +1;
+           }else{
+               respuesta1="incorrecta";
+               contIncorrectas=contIncorrectas+1;
+           }
+           rpta40.innerText= " Es " + respuesta + "," + respuesta1;
+           
+       });
+       alerta40.addEventListener("click", function(){
+           alert("La respuesta es "+ "Vs: "+ "spread"+ " , "+  " Vp : " + "spread");
+       });      
+      /**--------------------------------------------------------------------------------------------- */ 
+      boton41.addEventListener("click", function(){
+        var datops41=verbops41.value;
+        var datopp41=verbopp41.value;
+        var respuesta="";
+        var respuesta1="";
+        
+           if(datops41=="set"){
+              respuesta="correcta";
+              contCorrectas=contCorrectas +1;
+           }else{
+              respuesta="incorrecta";
+              contIncorrectas=contIncorrectas+1;
+           }
+           if(datopp41=="set"){
+               respuesta1="correcta";
+               contCorrectas=contCorrectas +1;
+           }else{
+               respuesta1="incorrecta";
+               contIncorrectas=contIncorrectas+1;
+           }
+           rpta41.innerText= " Es " + respuesta + "," + respuesta1;
+           
+       });
+       alerta41.addEventListener("click", function(){
+           alert("La respuesta es "+ "Vs: "+ "set"+ " , "+  " Vp : " + "set");
+       });    
+
+    /**--------------------------------------------------------------------------------------------- */
+    boton42.addEventListener("click", function(){
+        var datops42=verbops42.value;
+        var datopp42=verbopp42.value;
+        var respuesta="";
+        var respuesta1="";
+        
+           if(datops42=="got"){
+              respuesta="correcta";
+              contCorrectas=contCorrectas +1;
+           }else{
+              respuesta="incorrecta";
+              contIncorrectas=contIncorrectas+1;
+           }
+           if(datopp42=="got"){
+               respuesta1="correcta";
+               contCorrectas=contCorrectas +1;
+           }else{
+               respuesta1="incorrecta";
+               contIncorrectas=contIncorrectas+1;
+           }
+           rpta42.innerText= " Es " + respuesta + "," + respuesta1;
+           
+       });
+       alerta42.addEventListener("click", function(){
+           alert("La respuesta es "+ "Vs: "+ "got"+ " , "+  " Vp : " + "got");
+       });    
+
+  /**--------------------------------------------------------------------------------------------- */
+  boton43.addEventListener("click", function(){
+    var datops43=verbops43.value;
+    var datopp43=verbopp43.value;
+    var respuesta="";
+    var respuesta1="";
+    
+       if(datops43=="froze"){
+          respuesta="correcta";
+          contCorrectas=contCorrectas +1;
+       }else{
+          respuesta="incorrecta";
+          contIncorrectas=contIncorrectas+1;
+       }
+       if(datopp43=="frozen"){
+           respuesta1="correcta";
+           contCorrectas=contCorrectas +1;
+       }else{
+           respuesta1="incorrecta";
+           contIncorrectas=contIncorrectas+1;
+       }
+       rpta43.innerText= " Es " + respuesta + "," + respuesta1;
+       
+   });
+   alerta43.addEventListener("click", function(){
+       alert("La respuesta es "+ "Vs: "+ "froze"+ " , "+  " Vp : " + "frozen");
+   });    
+
+
+
+
+     /**--------------------------------------------------------------------------------------------- */
+       calcular.addEventListener("click", function(){       
+            correctas.innerText= "Correctas:" +contCorrectas;
+            incorrectas.innerText= "Incorrectas:" +contIncorrectas;
+                   
+       });
+     
+
+    
