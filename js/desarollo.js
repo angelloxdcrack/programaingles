@@ -283,12 +283,6 @@ var boton40=document.getElementById("button40");
 var rpta40=document.getElementById("Resultado40");
 var alerta40=document.getElementById("alerta40");
 /**--------------------------------------------- */
-var verbops41=document.getElementById("vps41");
-var verbopp41=document.getElementById("vpp41");
-var boton41=document.getElementById("button41");
-var rpta41=document.getElementById("Resultado41");
-var alerta41=document.getElementById("alerta41");
-/**--------------------------------------------- */
 var verbops42=document.getElementById("vps42");
 var verbopp42=document.getElementById("vpp42");
 var boton42=document.getElementById("button42");
@@ -1245,21 +1239,21 @@ boton33.addEventListener("click", function(){
     var respuesta="";
     var respuesta1="";
     
-       if(datops32=="spent"){
+       if(datops33=="spent"){
           respuesta="correcta";
           contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
           contIncorrectas=contIncorrectas+1;
        }
-       if(datopp32=="spent"){
+       if(datopp33=="spent"){
            respuesta1="correcta";
            contCorrectas=contCorrectas +1;
        }else{
            respuesta1="incorrecta";
            contIncorrectas=contIncorrectas+1;
        }
-       rpta32.innerText= " Es " + respuesta + "," + respuesta1;
+       rpta33.innerText= " Es " + respuesta + "," + respuesta1;
        
    });
    alerta33 .addEventListener("click", function(){
@@ -1323,8 +1317,8 @@ boton35.addEventListener("click", function(){
 
    /**--------------------------------------------------------------------------------------------- */
 boton36.addEventListener("click", function(){
-    var datops36=verbops35.value;
-    var datopp36=verbopp35.value;
+    var datops36=verbops36.value;
+    var datopp36=verbopp36.value;
     var respuesta="";
     var respuesta1="";
     
@@ -1459,32 +1453,6 @@ boton38.addEventListener("click", function(){
            alert("La respuesta es "+ "Vs: "+ "spread"+ " , "+  " Vp : " + "spread");
        });      
       /**--------------------------------------------------------------------------------------------- */ 
-      boton41.addEventListener("click", function(){
-        var datops41=verbops41.value;
-        var datopp41=verbopp41.value;
-        var respuesta="";
-        var respuesta1="";
-        
-           if(datops41=="set"){
-              respuesta="correcta";
-              contCorrectas=contCorrectas +1;
-           }else{
-              respuesta="incorrecta";
-              contIncorrectas=contIncorrectas+1;
-           }
-           if(datopp41=="set"){
-               respuesta1="correcta";
-               contCorrectas=contCorrectas +1;
-           }else{
-               respuesta1="incorrecta";
-               contIncorrectas=contIncorrectas+1;
-           }
-           rpta41.innerText= " Es " + respuesta + "," + respuesta1;
-           
-       });
-       alerta41.addEventListener("click", function(){
-           alert("La respuesta es "+ "Vs: "+ "set"+ " , "+  " Vp : " + "set");
-       });    
 
     /**--------------------------------------------------------------------------------------------- */
     boton42.addEventListener("click", function(){
