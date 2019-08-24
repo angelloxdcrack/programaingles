@@ -1306,14 +1306,14 @@ boton35.addEventListener("click", function(){
     var respuesta="";
     var respuesta1="";
     
-       if(datops35=="sat"){
+       if(datops35=="let"){
           respuesta="correcta";
           contCorrectas=contCorrectas +1;
        }else{
           respuesta="incorrecta";
           contIncorrectas=contIncorrectas+1;
        }
-       if(datopp35=="sat"){
+       if(datopp35=="let"){
            respuesta1="correcta";
            contCorrectas=contCorrectas +1;
        }else{
@@ -1552,8 +1552,8 @@ boton38.addEventListener("click", function(){
 
      /**--------------------------------------------------------------------------------------------- */
      boton45.addEventListener("click", function(){
-        var datops45=verbops44.value;
-        var datopp45=verbopp44.value;
+        var datops45=verbops45.value;
+        var datopp45=verbopp45.value;
         var respuesta="";
         var respuesta1="";
         
@@ -1577,20 +1577,6 @@ boton38.addEventListener("click", function(){
        alerta45.addEventListener("click", function(){
            alert("La respuesta es "+ "Vs: "+ "felt"+ " , "+  " Vp : " + "felt");
        });    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
      /**--------------------------------------------------------------------------------------------- */
        calcular.addEventListener("click", function(){       
             correctas.innerText= "Correctas:" +contCorrectas;
