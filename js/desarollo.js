@@ -295,6 +295,18 @@ var boton43=document.getElementById("button43");
 var rpta43=document.getElementById("Resultado43");
 var alerta43=document.getElementById("alerta43");
 /**--------------------------------------------- */
+var verbops44=document.getElementById("vps44");
+var verbopp44=document.getElementById("vpp44");
+var boton44=document.getElementById("button44");
+var rpta44=document.getElementById("Resultado44");
+var alerta44=document.getElementById("alerta44");
+/**--------------------------------------------- */
+var verbops45=document.getElementById("vps45");
+var verbopp45=document.getElementById("vpp45");
+var boton45=document.getElementById("button45");
+var rpta45=document.getElementById("Resultado45");
+var alerta45=document.getElementById("alerta45");
+/**--------------------------------------------- */
 var contCorrectas=0;
 var contIncorrectas=0;
 /**--------------------------------------------- */
@@ -1509,6 +1521,72 @@ boton38.addEventListener("click", function(){
    alerta43.addEventListener("click", function(){
        alert("La respuesta es "+ "Vs: "+ "froze"+ " , "+  " Vp : " + "frozen");
    });    
+
+     /**--------------------------------------------------------------------------------------------- */
+     boton44.addEventListener("click", function(){
+        var datops44=verbops44.value;
+        var datopp44=verbopp44.value;
+        var respuesta="";
+        var respuesta1="";
+        
+           if(datops44=="drank"){
+              respuesta="correcta";
+              contCorrectas=contCorrectas +1;
+           }else{
+              respuesta="incorrecta";
+              contIncorrectas=contIncorrectas+1;
+           }
+           if(datopp44=="drunk"){
+               respuesta1="correcta";
+               contCorrectas=contCorrectas +1;
+           }else{
+               respuesta1="incorrecta";
+               contIncorrectas=contIncorrectas+1;
+           }
+           rpta44.innerText= " Es " + respuesta + "," + respuesta1;
+           
+       });
+       alerta44.addEventListener("click", function(){
+           alert("La respuesta es "+ "Vs: "+ "drank"+ " , "+  " Vp : " + "drunk");
+       });    
+
+     /**--------------------------------------------------------------------------------------------- */
+     boton45.addEventListener("click", function(){
+        var datops45=verbops44.value;
+        var datopp45=verbopp44.value;
+        var respuesta="";
+        var respuesta1="";
+        
+           if(datops45=="felt"){
+              respuesta="correcta";
+              contCorrectas=contCorrectas +1;
+           }else{
+              respuesta="incorrecta";
+              contIncorrectas=contIncorrectas+1;
+           }
+           if(datopp45=="felt"){
+               respuesta1="correcta";
+               contCorrectas=contCorrectas +1;
+           }else{
+               respuesta1="incorrecta";
+               contIncorrectas=contIncorrectas+1;
+           }
+           rpta45.innerText= " Es " + respuesta + "," + respuesta1;
+           
+       });
+       alerta45.addEventListener("click", function(){
+           alert("La respuesta es "+ "Vs: "+ "felt"+ " , "+  " Vp : " + "felt");
+       });    
+
+
+
+
+
+
+
+
+
+
 
 
 
